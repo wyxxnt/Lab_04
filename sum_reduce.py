@@ -1,0 +1,20 @@
+def sum(*args):
+    result = 0
+    for num in args:
+        result = result + num
+    return result
+
+a = sum(1, 2, 3)
+print('a =', a)
+
+b = sum(0)
+print('b =', b)
+
+c = sum()
+print('c =', c)
+
+d = sum(1, -1, 1)
+print('d =', d)
+
+e = sum(10, -1, -1, -1)
+print('e =', e)
