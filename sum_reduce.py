@@ -3,6 +3,10 @@ def sum(*args):
     for num in args:
         result = result + num
     return result
+    def add(acc, value):
+        return acc + value
+
+    return reduce(add, args, 0)
 
 a = sum(1, 2, 3)
 print('a =', a)
